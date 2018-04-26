@@ -1,0 +1,16 @@
+# coding=gbk
+from PIL import Image
+import numpy as np
+# import scipy
+
+def loadImage():
+    # 读取图片
+    im = Image.open("檔名.jpg")
+
+    # 显示图片
+    im.show() 
+    
+    im = im.convert("L") 
+    data = im.getdata()
+    #把圖片數據轉成矩陣
+    data = np.matrix(data)
