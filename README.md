@@ -9,7 +9,9 @@
 
 
 工作分配：
+
 *如果不知道要分什麼工作，還可以：幫忙跑程式、簡化程式、etc*
 
 一些在寫readme時formatting的code
+
 https://help.github.com/articles/basic-writing-and-formatting-syntax/#styling-text
