@@ -49,7 +49,8 @@ class Discretizer(object):
         if len(myWire.coordz[0]) < n+1:
             return []
         
-        Segment = [array([myWire.coordz[0][n],myWire.coordz[0][n+1]]),array([myWire.coordz[1][n],myWire.coordz[1][n+1]]),array([myWire.coordz[2][n],myWire.coordz[2][n+1]])]  #(x, x+dx, y, y+dy, z, z+dz)
+        Segment = [array([myWire.coordz[0][n],myWire.coordz[0][n+1]]),array([myWire.coordz[1][n],myWire.coordz[1][n+1]]),
+                   array([myWire.coordz[2][n],myWire.coordz[2][n+1]])]  #(x, x+dx, y, y+dy, z, z+dz)
         
         #Segment vector calculation
         ux = Segment[0][1]-Segment[0][0] 
