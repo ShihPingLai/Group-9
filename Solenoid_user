@@ -18,7 +18,6 @@ z = np.linspace(-L_axis,L_axis,spacing)
 
 x,y,z = np.meshgrid(x,y,z)
 
-
 #建立螺線管的位置
 def cylinder(r,m,n,l):   #m,n是導線的位置
     phi = np.linspace(-2*np.pi,2*np.pi,100)
@@ -38,11 +37,10 @@ for i in range(0,n):
     for j in range(0,n):
         for k in range(0,n):
             position[i][j][k]= input("enter:")
-            current = position[i][j][k]                     #電流
+            current = position[i][j][k]        #電流
 print(position)
 
 
-                            
 #算出一小段螺線管造成的磁場
 def dB(x, y, z, theta, zp, m, n, l):
     
@@ -59,37 +57,23 @@ def dB(x, y, z, theta, zp, m, n, l):
 theta = np.linspace(0,2*np.pi,100)                #以theta描述螺線管每一段的位置
 
 
-bx = np.array([[[0.]*spacing]*spacing]*spacing)   #zp代表每個環的位置
-for p in zp:
-    for t in theta:
-        for i in range(0,n):
-            for j in range(0,n):
-                for k in range(0,n):
+bx = np.array([[[0.]*spacing]*spacing]*spacing)   #cz代表每個環的位置
+by = np.array([[[0.]*spacing]*spacing]*spacing)
+bz = np.array([[[0.]*spacing]*spacing]*spacing)
+
+for t in theta:
+    for i in range(0,n):
+        for j in range(0,n):
+            for k in range(0,n):
+                cx,cy,cz = cylinder(1,i,j,k)
+                for p in cz:
                     if position[i][j][k]==0:
                         continue
                     bx += dB(x, y, z, t, p, i, j, k)[0]
-
-by = np.array([[[0.]*spacing]*spacing]*spacing)
-for p in zp:
-    for t in theta:
-        for i in range(0,n):
-            for j in range(0,n):
-                for k in range(0,n):
-                    if position[i][j][k]==0:
-                        continue
                     by += dB(x, y, z, t, p, i, j, k)[1]
-    
-bz = np.array([[[0.]*spacing]*spacing]*spacing)
-for p in zp:
-    for t in theta:
-        for i in range(0,n):
-            for j in range(0,n):
-                for k in range(0,n):
-                    if position[i][j][k]==0:
-                        continue
                     bz += dB(x, y, z, t, p, i, j, k)[2]
-                
-                
+
+
 # Plot of the 3d vector field
 ax.quiver(x,y,z,bx,by,bz,color='b',length=1,normalize=True)
                                                     
