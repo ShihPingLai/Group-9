@@ -11,7 +11,6 @@ N = 100                    #單位長度的匝數
 r = 1                     #螺線管半徑                           
 mu = 1.26 * 10**(-6)      #磁導率
 
-
 #建立座標軸
 x = np.linspace(-L_axis,L_axis,spacing)
 y = np.linspace(-L_axis,L_axis,spacing)
@@ -27,10 +26,14 @@ def cylinder(r,m,n,l):   #m,n是導線的位置
     yp = n + r*np.sin(phi)
     zp = l + np.linspace(-half_L,half_L,N)
     return xp, yp, zp
-
-
+    
 # 3d figure
- # ([row, col])  #使用者輸入
+fig = plt.figure()
+ax = fig.gca(projection='3d')
+
+#使用者輸入
+n = 3
+position = np.zeros([n, n, n]) # ([row, col])  #使用者輸入
 for i in range(0,n):
     for j in range(0,n):
         for k in range(0,n):
@@ -50,7 +53,7 @@ def dB(x, y, z, theta, zp, m, n, l):
     dbz = mu*current*r/4/np.pi*(1 - ((x-m)*np.cos(theta)+(y-n)*np.sin(theta)))/((x-m)**2+(y-n)**2+(z-zp-l)**2+r**2-2*r*((x-m)*np.cos(theta)+(y-n)*np.sin(theta)))**1.5
     
     return dbx, dby, dbz
-
+    
 #將每一段螺線管的貢獻加總 
 
 theta = np.linspace(0,2*np.pi,100)                #以theta描述螺線管每一段的位置
@@ -86,11 +89,10 @@ for p in zp:
                         continue
                     bz += dB(x, y, z, t, p, i, j, k)[2]
                 
-
                 
 # Plot of the 3d vector field
 ax.quiver(x,y,z,bx,by,bz,color='b',length=1,normalize=True)
-
+                                                    
 
 #Plot the wire
 for i in range(0,n):
@@ -102,11 +104,9 @@ for i in range(0,n):
                     for l in cz:         
                         ax.plot(cx,cy,l,color='k')
 
-            
-    
-
+                
 plt.title('Magnetic field of a solenoid')
 plt.xlabel('x')
 plt.ylabel('y')
 plt.figure(figsize=(400,200))
-plt.show()
+plt.show()                
