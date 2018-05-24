@@ -90,7 +90,7 @@ for i in range(0,n):
                 ax.plot(cx,cy,l,color='k')
 
                 
-plt.title('Magnetic field of a solenoid')
+plt.title('Magnetic field of solenoid')
 plt.xlabel('x')
 plt.ylabel('y')
 plt.figure(figsize=(400,200))
