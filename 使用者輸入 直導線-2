@@ -51,7 +51,7 @@ for i in range(0,n):
             ax.plot(cx,cy,l,label='Cylinder',color='r') 
             #ax.plot(x,y,z) 把一的點的座標畫出來 這裡是指從-4到4之間畫800個點
                         
-ax.quiver(x,y,z,Bx,By,Bz,color='b',length=0.1,normalize=True)  #畫向量 表示式為座標，分量...
+ax.quiver(x,y,z,Bx,By,Bz,color='b',length=0.3,normalize=True)  #畫向量 表示式為座標，分量...
 plt.title('Magnetic field of a straight wire')
 plt.xlabel('x')
 plt.ylabel('y')
