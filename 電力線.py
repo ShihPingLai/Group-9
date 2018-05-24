@@ -1,4 +1,4 @@
-#畫出特定電荷分布的電力線
+# 畫出特定電荷分布的電力線
 import sys
 import numpy as np
 import matplotlib.pyplot as plt
