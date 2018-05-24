@@ -7,7 +7,7 @@ from scipy.integrate import quad
 L_axis = 4                #座標軸的範圍
 spacing = 10              #座標間距
 half_L = 0.5              #螺線管長度的一半
-N = 100                    #單位長度的匝數
+N = 100                   #單位長度的匝數
 r = 1                     #螺線管半徑                           
 mu = 1.26 * 10**(-6)      #磁導率
 
@@ -44,11 +44,11 @@ print(position)
 #算出一小段螺線管造成的磁場
 def dB(x, y, z, theta, zp, m, n, l):
     
-    dbx = mu*current*r/4/np.pi*(z-zp-l)*np.cos(theta)/((x-m)**2+(y-n)**2+(z-zp-l)**2+r**2-2*r*((x-m)*np.cos(theta)+(y-n)*np.sin(theta)))**1.5
+    dbx = mu*current*r/4/np.pi*(z-zp)*np.cos(theta)/((x-m)**2+(y-n)**2+(z-zp)**2+r**2-2*r*((x-m)*np.cos(theta)+(y-n)*np.sin(theta)))**1.5
 
-    dby = mu*current*r/4/np.pi*(z-zp-l)*np.sin(theta)/((x-m)**2+(y-n)**2+(z-zp-l)**2+r**2-2*r*((x-m)*np.cos(theta)+(y-n)*np.sin(theta)))**1.5
+    dby = mu*current*r/4/np.pi*(z-zp)*np.sin(theta)/((x-m)**2+(y-n)**2+(z-zp)**2+r**2-2*r*((x-m)*np.cos(theta)+(y-n)*np.sin(theta)))**1.5
 
-    dbz = mu*current*r/4/np.pi*(1 - ((x-m)*np.cos(theta)+(y-n)*np.sin(theta)))/((x-m)**2+(y-n)**2+(z-zp-l)**2+r**2-2*r*((x-m)*np.cos(theta)+(y-n)*np.sin(theta)))**1.5
+    dbz = mu*current*r/4/np.pi*(1 - ((x-m)*np.cos(theta)+(y-n)*np.sin(theta)))/((x-m)**2+(y-n)**2+(z-zp)**2+r**2-2*r*((x-m)*np.cos(theta)+(y-n)*np.sin(theta)))**1.5
     
     return dbx, dby, dbz
     
@@ -57,16 +57,17 @@ def dB(x, y, z, theta, zp, m, n, l):
 theta = np.linspace(0,2*np.pi,100)                #以theta描述螺線管每一段的位置
 
 
-bx = np.array([[[0.]*spacing]*spacing]*spacing)   #cz代表每個環的位置
-by = np.array([[[0.]*spacing]*spacing]*spacing)
-bz = np.array([[[0.]*spacing]*spacing]*spacing)
+bx = np.zeros((spacing,spacing,spacing))          
+by = np.zeros((spacing,spacing,spacing))
+bz = np.zeros((spacing,spacing,spacing))
 
-for t in theta:
-    for i in range(0,n):
-        for j in range(0,n):
-            for k in range(0,n):
-                cx,cy,cz = cylinder(1,i,j,k)
-                for p in cz:
+
+for i in range(0,n):
+    for j in range(0,n):
+        for k in range(0,n):
+            cx,cy,cz = cylinder(1,i,j,k)         #cz代表每個環的位置
+            for p in cz:
+                for t in theta:
                     if position[i][j][k]==0:
                         continue
                     bx += dB(x, y, z, t, p, i, j, k)[0]
@@ -80,13 +81,13 @@ ax.quiver(x,y,z,bx,by,bz,color='b',length=1,normalize=True)
 
 #Plot the wire
 for i in range(0,n):
-            for j in range(0,n):
-                for k in range(0,n):
-                    if position[i][j][k]==0:
-                        continue
-                    cx,cy,cz = cylinder(1,i,j,k)
-                    for l in cz:         
-                        ax.plot(cx,cy,l,color='k')
+    for j in range(0,n):
+        for k in range(0,n):
+            if position[i][j][k]==0:
+                continue
+            cx,cy,cz = cylinder(1,i,j,k)
+            for l in cz:         
+                ax.plot(cx,cy,l,color='k')
 
                 
 plt.title('Magnetic field of a solenoid')
