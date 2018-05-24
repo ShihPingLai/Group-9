@@ -21,7 +21,7 @@ def E(x,y,z,m,n,l,q):
     return Ex,Ey,Ez
 Ex,Ey,Ez=E(x,y,z,0,0,0,2)
 ax.quiver(x,y,z,Ex,Ey,Ez,color='b',length=1,normalize=True) 
-plt.title('E field')
+plt.title('E field of a positive charge')
 plt.xlabel('x')
 plt.ylabel('y')
 plt.ylabel('z')
