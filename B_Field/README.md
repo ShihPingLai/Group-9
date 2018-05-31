@@ -4,10 +4,11 @@
 
 ## 使用說明 ##
 ### 輸入每個位置的磁鐵大小 ###
-此程式設計為: 使用者可在空間中x,y,z = 0,1,2的範圍內，自由選擇磁鐵放置的位置與磁鐵大小。
-程式會要求使用者輸入27個數值,分別代表上述範圍的27個點對應到的磁鐵大小。
-磁鐵大小的單位為安培(A)
-註: 程式中以一個短螺線管代表一個小磁鐵，所以磁鐵的大小由螺線管的電流決定。
+此程式設計為: 使用者可在空間中x,y,z = 0,1,2的範圍內，自由選擇磁鐵放置的位置與磁鐵大小。   
+程式會要求使用者輸入27個數值,分別代表上述範圍的27個點對應到的磁鐵大小。   
+磁鐵大小的單位為安培(A)   
+註: 程式中以一個短螺線管代表一個小磁鐵，所以磁鐵的大小由螺線管的電流決定。   
 
 ### 結果 ###
 ![Alt text](https://raw.githubusercontent.com/ShihPingLai/Group-9/master/B_Field/figure1.png "figure1")
+![Alt text](https://raw.githubusercontent.com/ShihPingLai/Group-9/master/B_Field/figure2.png "figure2")
