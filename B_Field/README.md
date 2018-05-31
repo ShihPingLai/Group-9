@@ -25,7 +25,7 @@
 
 
 ### EXAMPLE ###  
-####Example1: ####
+#### Example1: ####
 若想在(0, 0, 0)及(2, 2, 2)兩位置各放上一個電流為1A的磁鐵，則輸入形式為:   
       
 ![Alt text](https://raw.githubusercontent.com/ShihPingLai/Group-9/master/B_Field/%E8%BC%B8%E5%85%A5%E8%AA%AA%E6%98%8E.png "figure1")   
