@@ -14,7 +14,7 @@
 
 在過程中我們發現，3D圖能顯示出真實電場方向分佈，而2D圖能顯示出真實電場的大小分布。
 
-以 2庫倫(C) 正電荷為例:
+以下為 2庫倫(C) 正電荷於(0,0,0)為例:
 
 2D電場分佈圖
 ![2D電場分佈圖](https://raw.githubusercontent.com/ShihPingLai/Group-9/master/E%20field/2D.png)
