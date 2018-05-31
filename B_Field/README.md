@@ -26,8 +26,8 @@
 
 ### 結果 ###
 ![Alt text](https://raw.githubusercontent.com/ShihPingLai/Group-9/master/B_Field/figure1.png "figure1")
-![Alt text](https://raw.githubusercontent.com/ShihPingLai/Group-9/master/B_Field/figure2.png "figure2")
-Figure1: 在(0, 0, 0)及(2, 2, 2)兩位置放上電流為1A的磁鐵形成的磁力線分布
-Figure2: 在27個位置上都放置電流大小不等的磁鐵
+![Alt text](https://raw.githubusercontent.com/ShihPingLai/Group-9/master/B_Field/figure2.png "figure2")   
+Figure1: 在(0, 0, 0)及(2, 2, 2)兩位置放上電流為1A的磁鐵形成的磁力線分布   
+Figure2: 在27個位置上都放置電流大小不等的磁鐵   
 
 
