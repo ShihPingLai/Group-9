@@ -1,4 +1,4 @@
-## 單一正電荷在空間中的磁場分佈 
+## 單一正電荷在空間中的磁場分佈 ##
 
 ### 目的 
 透過使用者輸入不同位置，以python模擬在空間中單一正電荷周圍的2D或3D場分佈圖。
@@ -14,14 +14,16 @@
 
 以 2庫倫(C) 正電荷為例:
 
-![Alt text](Group-9/E field/2D.png "2D電場分佈圖")
+! [Alt text](Group-9/E field/2D.png "2D電場分佈圖")
 
-![Alt text](Group-9/E field/3D.png "3D電場分佈圖")
+! [Alt text](Group-9/E field/3D.png "3D電場分佈圖")
 
 
 ### 程式碼
 
 > STEP1: 使用者輸入
+
 > STEP2: 2D電場分佈圖
+
 > STEP3: 3D電場分佈圖
 
