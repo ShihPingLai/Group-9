@@ -10,7 +10,7 @@
 註: 程式中以一個短螺線管代表一個小磁鐵，所以磁鐵的大小由螺線管的電流決定。   
 
 27個位置依序代表:   
-<table><tr><td bgcolor=WhiteSmoke>
+
 (x, y, z)=   
 1. (0,0,0) &nbsp; &nbsp; &nbsp; 10. (0,1,0) &nbsp; &nbsp; &nbsp; 19. (0,2,0)   
 2. (0,0,1) &nbsp; &nbsp; &nbsp; 11. (0,1,1) &nbsp; &nbsp; &nbsp; 20. (0,2,1)   
@@ -21,10 +21,10 @@
 7. (2,0,0) &nbsp; &nbsp; &nbsp; 16. (2,1,0) &nbsp; &nbsp; &nbsp; 25. (2,2,0)   
 8. (2,0,1) &nbsp; &nbsp; &nbsp; 17. (2,1,1) &nbsp; &nbsp; &nbsp; 26. (2,2,1)   
 9. (2,0,2) &nbsp; &nbsp; &nbsp; 18. (2,1,2) &nbsp; &nbsp; &nbsp; 27. (2,2,2)   
-</td></tr></table>
+
 
 ### 結果 ###
 ![Alt text](https://raw.githubusercontent.com/ShihPingLai/Group-9/master/B_Field/figure1.png "figure1")
 ![Alt text](https://raw.githubusercontent.com/ShihPingLai/Group-9/master/B_Field/figure2.png "figure2")
 
-<table><tr><td bgcolor=WhiteSmoke>111</td></tr></table>
+
