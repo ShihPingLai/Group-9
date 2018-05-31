@@ -24,7 +24,7 @@
 
 > STEP1: 使用者輸入
 
-> STEP2: 2D電場分佈圖
+> STEP2: [2D電場分佈圖](https://github.com/ShihPingLai/Group-9/blob/master/E%20field/E%20field%20of%20a%20positive%20charge%20in%202D.ipynb)
 
-> STEP3: 3D電場分佈圖
+> STEP3: [3D電場分佈圖]
 
