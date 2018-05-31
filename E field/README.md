@@ -14,9 +14,9 @@
 
 以 2庫倫(C) 正電荷為例:
 
-![Alt text](path/to/img.2D.png "2D電場分佈圖")
+![Alt text](path/to/img.Group-9/E field/2D.png "2D電場分佈圖")
 
-![Alt text](path/to/img.3D.png "3D電場分佈圖")
+![Alt text](path/to/img.Group-9/E field/3D.png "3D電場分佈圖")
 
 
 ### 程式碼
