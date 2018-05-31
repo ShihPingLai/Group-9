@@ -11,18 +11,20 @@
 
 27個位置依序代表:   
 <table><tr><td bgcolor=WhiteSmoke>
-(x, y, z)=
-1. (0,0,0) &nbsp; &nbsp; &nbsp; 10. (0,1,0) &nbsp; &nbsp; &nbsp; 19. (0,2,0)
-2. (0,0,1) &nbsp; &nbsp; &nbsp; 11. (0,1,1) &nbsp; &nbsp; &nbsp; 20. (0,2,1)
-3. (0,0,2) &nbsp; &nbsp; &nbsp; 12. (0,1,2) &nbsp; &nbsp; &nbsp; 21. (0,2,2)
-4. (1,0,0) &nbsp; &nbsp; &nbsp; 13. (1,1,0) &nbsp; &nbsp; &nbsp; 22. (1,2,0)
-5. (1,0,1) &nbsp; &nbsp; &nbsp; 14. (1,1,1) &nbsp; &nbsp; &nbsp; 23. (1,2,1)
-6. (1,0,2) &nbsp; &nbsp; &nbsp; 15. (1,1,2) &nbsp; &nbsp; &nbsp; 24. (1,2,2)
-7. (2,0,0) &nbsp; &nbsp; &nbsp; 16. (2,1,0) &nbsp; &nbsp; &nbsp; 25. (2,2,0)
-8. (2,0,1) &nbsp; &nbsp; &nbsp; 17. (2,1,1) &nbsp; &nbsp; &nbsp; 26. (2,2,1)
-9. (2,0,2) &nbsp; &nbsp; &nbsp; 18. (2,1,2) &nbsp; &nbsp; &nbsp; 27. (2,2,2)
+(x, y, z)=   
+1. (0,0,0) &nbsp; &nbsp; &nbsp; 10. (0,1,0) &nbsp; &nbsp; &nbsp; 19. (0,2,0)   
+2. (0,0,1) &nbsp; &nbsp; &nbsp; 11. (0,1,1) &nbsp; &nbsp; &nbsp; 20. (0,2,1)   
+3. (0,0,2) &nbsp; &nbsp; &nbsp; 12. (0,1,2) &nbsp; &nbsp; &nbsp; 21. (0,2,2)   
+4. (1,0,0) &nbsp; &nbsp; &nbsp; 13. (1,1,0) &nbsp; &nbsp; &nbsp; 22. (1,2,0)   
+5. (1,0,1) &nbsp; &nbsp; &nbsp; 14. (1,1,1) &nbsp; &nbsp; &nbsp; 23. (1,2,1)   
+6. (1,0,2) &nbsp; &nbsp; &nbsp; 15. (1,1,2) &nbsp; &nbsp; &nbsp; 24. (1,2,2)   
+7. (2,0,0) &nbsp; &nbsp; &nbsp; 16. (2,1,0) &nbsp; &nbsp; &nbsp; 25. (2,2,0)   
+8. (2,0,1) &nbsp; &nbsp; &nbsp; 17. (2,1,1) &nbsp; &nbsp; &nbsp; 26. (2,2,1)   
+9. (2,0,2) &nbsp; &nbsp; &nbsp; 18. (2,1,2) &nbsp; &nbsp; &nbsp; 27. (2,2,2)   
 </td></tr></table>
 
 ### 結果 ###
 ![Alt text](https://raw.githubusercontent.com/ShihPingLai/Group-9/master/B_Field/figure1.png "figure1")
 ![Alt text](https://raw.githubusercontent.com/ShihPingLai/Group-9/master/B_Field/figure2.png "figure2")
+
+<table><tr><td bgcolor=WhiteSmoke>111</td></tr></table>
