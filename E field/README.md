@@ -15,16 +15,16 @@
 
 以 2庫倫(C) 正電荷為例:
 
-![Alt text](path/to/img.Group-9/E field/2D.png "2D電場分佈圖")
+![Alt text](https://raw.githubusercontent.com/ShihPingLai/Group-9/master/E%20field/2D.png "2D電場分佈圖")
 
-![Alt text](path/to/img.Group-9/E field/3D.png "3D電場分佈圖")
+![Alt text](https://raw.githubusercontent.com/ShihPingLai/Group-9/master/E%20field/3D.png "3D電場分佈圖")
 
 
 ## 程式碼
 
-'STEP1: 使用者輸入'
+< STEP1: 使用者輸入
 
-'STEP2: 2D電場分佈圖'
+< STEP2: 2D電場分佈圖
 
-'STEP3: 3D電場分佈圖'
+< STEP3: 3D電場分佈圖
 
