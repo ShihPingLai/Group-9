@@ -8,6 +8,7 @@
 程式會要求使用者輸入27個數值,分別代表上述範圍的27個點對應到的磁鐵大小。   
 磁鐵大小的單位為安培(A)   
 註: 程式中以一個短螺線管代表一個小磁鐵，所以磁鐵的大小由螺線管的電流決定。   
+    電流=0 代表此位置不放磁鐵
 
 27個位置依序代表:   
 
@@ -26,5 +27,7 @@
 ### 結果 ###
 ![Alt text](https://raw.githubusercontent.com/ShihPingLai/Group-9/master/B_Field/figure1.png "figure1")
 ![Alt text](https://raw.githubusercontent.com/ShihPingLai/Group-9/master/B_Field/figure2.png "figure2")
+Figure1: 在(0, 0, 0)及(2, 2, 2)兩位置放上電流為1A的磁鐵形成的磁力線分布
+Figure2: 在27個位置上都放置電流大小不等的磁鐵
 
-<table><tr><td bgcolor=silver>silver9. (2,0,2) &nbsp; &nbsp; &nbsp; 18. (2,1,2) &nbsp; &nbsp; &nbsp; 27. (2,2,2)</td></tr></table>
+
