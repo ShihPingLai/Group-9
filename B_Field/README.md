@@ -27,4 +27,4 @@
 ![Alt text](https://raw.githubusercontent.com/ShihPingLai/Group-9/master/B_Field/figure1.png "figure1")
 ![Alt text](https://raw.githubusercontent.com/ShihPingLai/Group-9/master/B_Field/figure2.png "figure2")
 
-
+<table><tr><td bgcolor=silver>silver9. (2,0,2) &nbsp; &nbsp; &nbsp; 18. (2,1,2) &nbsp; &nbsp; &nbsp; 27. (2,2,2)</td></tr></table>
