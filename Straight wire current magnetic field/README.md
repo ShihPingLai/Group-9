@@ -16,5 +16,6 @@ _方法:以客製化矩陣供使用者輸入，並自由給定每根長直導線
 # 結果
 | current position  | magnetic field contribution |
 | :---------------- |----------------------------:|
-| [[ 4.  0.  0.][ 0.  5.  5.][ 3.  0.  2.]] | ![ex](https://kingofamani.gitbooks.io/git-teach/content/assets/dojocat.jpg"ex1") | 
+| [[ 4.  0.  0.][ 0.  5.  5.][ 3.  0.  2.]] | ![Alt text](https://scontent-tpe1-1.xx.fbcdn.net/v/t1.15752-9/34479224_1750927958321387_1250771386574569472_n.png?_nc_cat=0&oh=90c9306ba042d3e80bde9ccbba17aab4&oe=5BB91CC3) | 
+| 
 # 最終版程式名稱
