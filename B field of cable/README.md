@@ -69,8 +69,8 @@ for j in np.linspace(-4,4,800):
 Dx,Dy,Dz = B(x,y,0,0) 
 ax.quiver(x,y,z,Bx-Dx,By-Dy,Bz-Dz,color='b',length=0.5,normalize=True)  #畫B的vector
 ```
-我設它的位置在(0,0)，半徑=0.1。Dx,Dy,Dz是它產生的磁場，但因為電流方向和外面電纜相反，故最後畫磁場是(Bx-Dx,By-Dy,Bz-Dz)。
-一樣結果超奇怪，但我還是找不出問題，失敗的作品QQ
+我設它的位置在(0,0)，半徑=0.1。Dx,Dy,Dz是它產生的磁場，但因為電流方向和外面電纜相反，故最後畫磁場是
+(Bx-Dx,By-Dy,Bz-Dz)。一樣結果超奇怪，但我還是找不出問題，失敗的作品QQ
 
 ![Alt text](https://github.com/ShihPingLai/Group-9/blob/master/B%20field%20of%20cable/fig3.png)
 fig3: 同軸電纜
