@@ -53,6 +53,22 @@ R是同軸電纜的半徑。利用for loop把每一根導線的磁場疊加到Bx
 
 ## 3. 結果:
 結果其實有點不如我意，這個圖形不是圓對稱，雖然已修改多次，包括增加導線數目讓結果更真實，但也不知道為什麼不對稱。
-另外我也發現到，在angles = np.linspace(-np.pi, np.pi, 20)，原本是從-180度畫到180度，若改為從0畫到360度，出來的圖形會不同，所以代表跟畫圖的方向有關
+另外我也發現到，在angles = np.linspace(-np.pi, np.pi, 20)，原本是從-180度畫到180度，若改為從0畫到360度，出來的圖形會不同，所以代表這跟畫圖的方向有關。不過我覺得很奇怪，應該是要沒差才對。
+![Alt text](https://github.com/ShihPingLai/Group-9/blob/master/B%20field%20of%20cable/fig1.png)
+fig1: -180度畫到180度
+![Alt text](https://github.com/ShihPingLai/Group-9/blob/master/B%20field%20of%20cable/fig2.png)
+fig2: 0度畫到360度
 
-
+## 4. 延伸:同軸電纜的磁場
+在剛剛的電纜裡面再加一根導線，電流方向相反，即為同軸電纜
+```
+dx,dy=cylinder(0.1,0,0)   
+for j in np.linspace(-4,4,800):
+    ax.plot(dx,dy,j,label='Cylinder',color='g')  #導管內部又放一根長直導線
+Dx,Dy,Dz = B(x,y,0,0) 
+ax.quiver(x,y,z,Bx-Dx,By-Dy,Bz-Dz,color='b',length=0.5,normalize=True)  #畫B的vector
+```
+我設它的位置在(0,0)，半徑=0.1。Dx,Dy,Dz是它產生的磁場，但因為電流方向和外面電纜相反，故最後畫磁場是(Bx-Dx,By-Dy,Bz-Dz)。
+一樣結果超奇怪，但我還是找不出問題，失敗的作品QQ
+![Alt text](https://github.com/ShihPingLai/Group-9/blob/master/B%20field%20of%20cable/fig3.png)
+fig3: 同軸電纜
