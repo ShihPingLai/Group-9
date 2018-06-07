@@ -3,22 +3,23 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.integrate import quad
 
-#設定
-L_axis = 4                #座標軸的範圍
-spacing = 10              #座標間距
-half_L = 0.5              #螺線管長度的一半
-N = 100                   #單位長度的匝數
-r = 1                     #螺線管半徑                           
-mu = 1.26 * 10**(-6)      #磁導率
 
 #建立座標軸
+L_axis = 4                #座標軸的範圍
+spacing = 10              #座標間距
+
 x = np.linspace(-L_axis,L_axis,spacing)
 y = np.linspace(-L_axis,L_axis,spacing)
 z = np.linspace(-L_axis,L_axis,spacing)
 
 x,y,z = np.meshgrid(x,y,z)
 
-#建立螺線管的位置
+#建立螺線管
+half_L = 0.5              #螺線管長度的一半
+N = 100                   #單位長度的匝數
+r = 1                     #螺線管半徑                           
+mu = 1.26 * 10**(-6)      #磁導率
+
 def cylinder(r,m,n,l):   #m,n是導線的位置
     phi = np.linspace(-2*np.pi,2*np.pi,100)
     xp = m + r*np.cos(phi)
