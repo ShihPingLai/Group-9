@@ -82,5 +82,11 @@ marker的大小顏色也可以改變
  B=np.array([1,0,0]) 
  E=np.array([0,1,0]) 
  ```
- ![Alt text](https://github.com/ShihPingLai/Group-9/blob/master/Lorentz%20force/1.png)  
- 
+ ![Alt text](https://github.com/ShihPingLai/Group-9/blob/master/Lorentz%20force/fig1)  
+
+(2)磁場是x,y,z的函數
+```
+B=np.array([x*y,0,0])
+E=np.array([3,6,100])
+```
+![Alt text](https://github.com/ShihPingLai/Group-9/blob/master/Lorentz%20force/fig2)  
