@@ -55,15 +55,28 @@ Ex,Ey,Ez=E(x, y, z, i, j, 0, position[i][j])
 
 
 
-### 結果
+### 三、結果
+
+以 plt.quiver 畫出向量圖，箭號大小表示電場大小，箭號方向表示電場方向
+
+1. 畫出2D電場分佈圖
+  - 程式碼檔案：
+
+> EX: input
+enter:0
+enter:5
+enter:0
+enter:0
+enter:0
+enter:0
+enter:-10
+enter:0
+enter:0
+[[  0.   5.   0.]
+ [  0.   0.   0.]
+ [-10.   0.   0.]]
+ 
+ 
 
 
-
-### 程式碼
-
-> STEP1: 使用者輸入
-
-> STEP2: [2D電場分佈圖](https://github.com/ShihPingLai/Group-9/blob/master/E%20field/E%20field%20of%20a%20positive%20charge%20in%202D.ipynb)
-
-> STEP3: [3D電場分佈圖](https://github.com/ShihPingLai/Group-9/blob/master/E%20field/E%20field%20of%20a%20positive%20charge%20in%203D.ipynb)
 
