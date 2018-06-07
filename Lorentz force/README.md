@@ -90,3 +90,10 @@ B=np.array([x*y,0,0])
 E=np.array([3,6,100])
 ```
 ![Alt text](https://github.com/ShihPingLai/Group-9/blob/master/Lorentz%20force/2.png)  
+
+(3)電場和磁場都是x,y,z的函數
+```
+B=np.array([x*y,0,0])
+E=np.array([y/x,0,x*z])
+```
+![Alt text](https://github.com/ShihPingLai/Group-9/blob/master/Lorentz%20force/3.png)  
