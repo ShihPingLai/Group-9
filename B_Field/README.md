@@ -8,7 +8,33 @@
     half_L = 0.5              #螺線管長度的一半
     N = 100                   #單位長度的匝數
     r = 1                     #螺線管半徑   
+       
+    def cylinder(r,m,n,l):    
+    phi = np.linspace(-2*np.pi,2*np.pi,100)
+    xp = m + r*np.cos(phi)
+    yp = n + r*np.sin(phi)
+    zp = l + np.linspace(-half_L,half_L,N)
+    return xp, yp, zp
+```   
+在程式中每個小磁鐵都以短螺線管表示，因此要設定螺線管的基本性質(長度、半徑、匝數)。
+函數cylinder用來決定小磁鐵在空間中的位置:
+(m,n,l)代表螺線管中心點的座標位置，r是螺線管半徑   
+函數return的值為*螺線管每個點的x,y,z座標*   
+   
+### 2.如何讓使用者輸入放置磁鐵的位置 ###
 ```
+    n = 3
+    position = np.zeros([n, n, n]) # ([row, col])  #使用者輸入
+    for i in range(0,n):
+        for j in range(0,n):
+            for k in range(0,n):
+                position[i][j][k]= input("enter:")
+                current = position[i][j][k]        #電流
+    print(position)
+```
+position為一個n x n x n的空間，也就是包含所有x,y,z = 0 ~ n-1 的格子點。   
+position[i][j][k]則代表(x,y,z) = (i,j,k)這個點上的磁鐵大小，也就是中心點在(i,j,k)的螺線管電流大小。 
+   
 ### 輸入說明: 以預設值為例 ###
 程式預設為: 使用者可在空間中x,y,z = 0,1,2的範圍內，自由選擇磁鐵放置的位置與磁鐵大小。   
 程式會要求使用者輸入27個數值,分別代表上述範圍的27個點對應到的磁鐵大小。   
