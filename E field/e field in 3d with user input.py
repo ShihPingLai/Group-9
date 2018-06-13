@@ -4,9 +4,9 @@
 from mpl_toolkits.mplot3d import axes3d
 import matplotlib.pyplot as plt
 import numpy as np
-x = np.linspace(0,4,6)   #以6個向量標示
-y = np.linspace(0,4,6)
-z = np.linspace(0,4,6)
+x = np.linspace(0,2,6)   #以6個向量標示
+y = np.linspace(0,2,6)
+z = np.linspace(0,2,6)
 x,y,z = np.meshgrid(x,y,z)
 
 # 3d figure
