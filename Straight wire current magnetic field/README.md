@@ -78,15 +78,16 @@ for i in range(0,n):
             ax.plot(cx,cy,l,label='Cylinder',color='r') 
             
 ```
-step 4:畫圖
 導線位置與電流大小由使用者決定，分別輸入3*3中的9個位置
+
+step 4:畫圖
 # 3. 使用說明
 畫面會先出現一個輸入介面enter，此介面將會出現9次，分別是長直導線可作用的九個位置，順序為左到右，上到下
 # 4. 結果
 | current position  | magnetic field contribution |
 | :---------------- |----------------------------:|
-| [[ 4.  0.  0.][ 0.  5.  5.][ 3.  0.  2.]] | ![Alt text](https://scontent-tpe1-1.xx.fbcdn.net/v/t1.15752-9/34479224_1750927958321387_1250771386574569472_n.png?_nc_cat=0&oh=90c9306ba042d3e80bde9ccbba17aab4&oe=5BB91CC3) | 
-| [[ 1.  0.  6.][ 0.  0.  8.][ 9.  7.  2.]] | ![Alt text](https://scontent-tpe1-1.xx.fbcdn.net/v/t1.15752-9/34822100_1750931124987737_7275885512383004672_n.png?_nc_cat=0&oh=eb6f836f30ed92203f44bd0e1829da0b&oe=5BAE11AF) | 
-| [[ 1.  0.  0.][ 0.  0.  1.][ 0.  1.  0.]] | ![Alt text](https://scontent-tpe1-1.xx.fbcdn.net/v/t1.15752-9/34667660_1750931131654403_8962445729876410368_n.png?_nc_cat=0&oh=52029c3d11945e8ee9b0229486dc14c7&oe=5BAFB908) |
+| [[1. 0. 2.][0. 0. 0.][3. 0. 4.]] | ![Alt text](https://scontent-tpe1-1.xx.fbcdn.net/v/t1.15752-0/s370x247/35079438_1758285814252268_3130704947427934208_n.png?_nc_cat=0&oh=f6cc212189da878843f81a38f3317662&oe=5B7920FB) | 
+| [[1. 2. 3.][4. 0. 0.][0. 0. 0.]] | ![Alt text](https://scontent-tpe1-1.xx.fbcdn.net/v/t1.15752-9/35166839_1758285810918935_693702604886114304_n.png?_nc_cat=0&oh=07ee1da38917197f8d05e21afdb9622d&oe=5BB45DF2) | 
+| [[     0.      0.      0.][     0. 100000.      0.][     0.      0.      0.]] | ![Alt text](https://scontent-tpe1-1.xx.fbcdn.net/v/t1.15752-0/s370x247/35180975_1758285800918936_9114190858634133504_n.png?_nc_cat=0&oh=fa86d3bda3151a2385c4feaae0e5d107&oe=5BB8D5A8) |
 # 5. 最終版程式名稱
 final result 2
