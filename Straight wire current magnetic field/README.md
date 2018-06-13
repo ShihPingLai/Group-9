@@ -86,8 +86,8 @@ step 4:畫圖
 # 4. 結果
 | current position  | magnetic field contribution |
 | :---------------- |----------------------------:|
-| [[1. 0. 2.][0. 0. 0.][3. 0. 4.]] | ![Alt text](https://scontent-tpe1-1.xx.fbcdn.net/v/t1.15752-0/s370x247/35079438_1758285814252268_3130704947427934208_n.png?_nc_cat=0&oh=f6cc212189da878843f81a38f3317662&oe=5B7920FB) | 
+| [[1. 0. 2.][0. 0. 0.][3. 0. 4.]] | ![Alt text](https://scontent-tpe1-1.xx.fbcdn.net/v/t1.15752-9/35079438_1758285814252268_3130704947427934208_n.png?_nc_cat=0&oh=c8732be244780f825726c0f947418e3f&oe=5BB4EC91) | 
 | [[1. 2. 3.][4. 0. 0.][0. 0. 0.]] | ![Alt text](https://scontent-tpe1-1.xx.fbcdn.net/v/t1.15752-9/35166839_1758285810918935_693702604886114304_n.png?_nc_cat=0&oh=07ee1da38917197f8d05e21afdb9622d&oe=5BB45DF2) | 
-| [[     0.      0.      0.][     0. 100000.      0.][     0.      0.      0.]] | ![Alt text](https://scontent-tpe1-1.xx.fbcdn.net/v/t1.15752-0/s370x247/35180975_1758285800918936_9114190858634133504_n.png?_nc_cat=0&oh=fa86d3bda3151a2385c4feaae0e5d107&oe=5BB8D5A8) |
+| [[     0.      0.      0.][     0. 100000.      0.][     0.      0.      0.]] | ![Alt text](https://scontent-tpe1-1.xx.fbcdn.net/v/t1.15752-9/35180975_1758285800918936_9114190858634133504_n.png?_nc_cat=0&oh=97f8bcaa8dafcbfdf2f2d91ff7c8f7ca&oe=5BBDF4C2) |
 # 5. 最終版程式名稱
 final result 2
