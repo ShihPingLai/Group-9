@@ -44,9 +44,10 @@ def cylinder(r,m,n):   #m,n是導線的位置
     y = n+r*np.sin(phi) # +n更正
     return x,y
 ```
-> 磁場部分:利用直導線磁場公式B=M0*I/2*pi*r 其中r=((x-m)^2+(y-n)^2)^(1/2) m,n為導線位置 bx,by,bz分別為磁場的x,y,z分量
+> 磁場部分:利用直導線磁場公式B=M0*I/2*pi*r 其中r=((x-m)^2+(y-n)^2)^(1/2) m,n為導線位置 bx,by,bz分別為磁場的x,y,z分量 這裡的電流值i固定為1
 
 > 導線部分:建立一個圓柱並輸出x,y分量
+
 step 3:使用者輸入
 ```
 # 給定磁場初始值
@@ -68,13 +69,16 @@ for i in range(0,n):
         if position[i][j]==0: # 若使用者輸入為0,則略過
             continue
         bx,by,bz = B(x,y,i,j)           #Magnetic field
-        Bx=Bx+bx                        #+bx修正
-        By=By+by                        #+by修正    
+        Bx=(Bx+bx*position[i][j])*50    #+bx*position修正(電流變幾倍磁場就變幾倍)
+        By=(By+by*position[i][j])*50    #+by*position修正(電流變幾倍磁場就變幾倍) 
+        #乘上50是為了在圖形的結果能看得見
         Bz=Bz+bz                        #+bz修正
         cx,cy = cylinder(0.2,i,j)       #Wire
         for l in np.linspace(-4,4,800):  #-4到4是指線的長度,總長8    #Plot the wire
             ax.plot(cx,cy,l,label='Cylinder',color='r') 
+            
 ```
+step 4:畫圖
 導線位置與電流大小由使用者決定，分別輸入3*3中的9個位置
 # 3. 使用說明
 畫面會先出現一個輸入介面enter，此介面將會出現9次，分別是長直導線可作用的九個位置，順序為左到右，上到下
@@ -85,4 +89,4 @@ for i in range(0,n):
 | [[ 1.  0.  6.][ 0.  0.  8.][ 9.  7.  2.]] | ![Alt text](https://scontent-tpe1-1.xx.fbcdn.net/v/t1.15752-9/34822100_1750931124987737_7275885512383004672_n.png?_nc_cat=0&oh=eb6f836f30ed92203f44bd0e1829da0b&oe=5BAE11AF) | 
 | [[ 1.  0.  0.][ 0.  0.  1.][ 0.  1.  0.]] | ![Alt text](https://scontent-tpe1-1.xx.fbcdn.net/v/t1.15752-9/34667660_1750931131654403_8962445729876410368_n.png?_nc_cat=0&oh=52029c3d11945e8ee9b0229486dc14c7&oe=5BAFB908) |
 # 5. 最終版程式名稱
-final results
+final result 2
