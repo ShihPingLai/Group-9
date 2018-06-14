@@ -40,3 +40,4 @@
 - B field of cable: 將通有表面電流的電纜，畫出磁場分布
 - B field: 使用者給定磁鐵放置位置後，畫出磁場分布
 - E field: 使用者給訂電荷位置正負、大小，畫出該空間的電場分布
+- straight wire current magnetic field: 使用者給定長直導線位置與電流大小，畫出磁場分布
