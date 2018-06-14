@@ -61,6 +61,7 @@ Ex,Ey,Ez=E(x, y, z, i, j, 0, position[i][j])
 
 #### 1. 畫出2D電場分佈圖
 
+使用程式 [E Field with user 2D input (2D)](https://github.com/ShihPingLai/Group-9/blob/master/E%20field/E%20Field%20with%20user%20%202D%20input%20(2D).py) 
 假設以下依序為輸入陣列，可得到結果如下圖： 
 ```
 enter:0         
@@ -76,9 +77,25 @@ enter:0
  [  0.   0.   0.]
  [-10.   0.   0.]]
  ```
- ![Alt text](https://raw.githubusercontent.com/ShihPingLai/Group-9/master/E%20field/E%20input%20for%202D%20.png)
+ ![Alt text](https://raw.githubusercontent.com/ShihPingLai/Group-9/master/E%20field/figure/E%20with%202D%20input%20(2D)%20.png)
 
  
 #### 2. 畫出3D電場分佈圖
 
-
+使用程式[E Field with user 2D input (3D)](https://github.com/ShihPingLai/Group-9/blob/master/E%20field/E%20Field%20with%20user%202D%20input%20(3D).py) 
+假設以下依序為輸入陣列，可得到結果如下圖： 
+```
+enter:5            #位置為(0,0)，所帶電荷為+5
+enter:0
+enter:0
+enter:0
+enter:0
+enter:0
+enter:0
+enter:0
+enter:-10          #位置為(2,2)，所帶電荷為-10
+[[  5.   0.   0.]
+ [  0.   0.   0.]
+ [  0.   0. -10.]]
+```
+ ![Alt text](https://raw.githubusercontent.com/ShihPingLai/Group-9/master/E%20field/figure/E%20with%202D%20input%20(3D)%20.png)
