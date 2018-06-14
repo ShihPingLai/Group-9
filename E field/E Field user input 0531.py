@@ -27,7 +27,7 @@ ey = 0
 ez = 0
 
 n = 3 
-position = np.zeros([n, n]) # ([row, col])
+position = np.zeros([n, n])   # ([row, col])
 # print position
 
 for i in range(0,n):
@@ -39,18 +39,17 @@ for i in range(0,n):
     for j in range(0,n):
         if position[i][j]==0:
             continue          
+        plt.plot([i], [j], [0], color='red', marker='o', markersize=5)  
+        
         Ex,Ey,Ez=E(x, y, z, i, j, 0, position[i][j])
         ex=Ex+ex
         ey=Ey+ey
-        ez=Ez+ez
-        plt.plot([i], [j], [0], color='red', marker='o', markersize=5)  
-        
+        ez=Ez+ez        
 
 ax.quiver(x,y,z,ex,ey,ez,color='b',length=1,normalize=True) 
-plt.title('E field of a positive charge')
+plt.title('E field of positive charges')
 plt.xlabel('x')
 plt.ylabel('y')
-plt.ylabel('z')
 plt.plot
 plt.show()
 
