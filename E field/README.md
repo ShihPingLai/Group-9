@@ -64,12 +64,12 @@ Ex,Ey,Ez=E(x, y, z, i, j, 0, position[i][j])
 假設以下依序為輸入陣列，可得到結果如下圖： 
 ```
 enter:0         
-enter:5         #(0,1)
+enter:5         #位置為(0,1)，所帶電荷為+5
 enter:0
 enter:0
 enter:0
 enter:0
-enter:-10       #(2,0)
+enter:-10       #位置為(2,0)，所帶電荷為-10
 enter:0
 enter:0
 [[  0.   5.   0.]
@@ -79,6 +79,6 @@ enter:0
  ![Alt text](https://raw.githubusercontent.com/ShihPingLai/Group-9/master/E%20field/E%20input%20for%202D%20.png)
 
  
-
+#### 2. 畫出3D電場分佈圖
 
 
