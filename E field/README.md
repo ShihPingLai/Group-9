@@ -63,13 +63,13 @@ Ex,Ey,Ez=E(x, y, z, i, j, 0, position[i][j])
 
 假設以下依序為輸入陣列，可得到結果如下圖： 
 ```
-enter:0
-enter:5
-enter:0
-enter:0
+enter:0         
+enter:5         #(0,1)
 enter:0
 enter:0
-enter:-10
+enter:0
+enter:0
+enter:-10       #(2,0)
 enter:0
 enter:0
 [[  0.   5.   0.]
