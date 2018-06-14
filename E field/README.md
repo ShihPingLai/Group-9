@@ -59,9 +59,9 @@ Ex,Ey,Ez=E(x, y, z, i, j, 0, position[i][j])
 
 以 plt.quiver 畫出向量圖，箭號大小表示電場大小，箭號方向表示電場方向
 
-# 1. 畫出2D電場分佈圖
+#### 1. 畫出2D電場分佈圖
 
-假設輸入陣列依序為： 
+假設以下依序為輸入陣列，可得到結果如下圖： 
 ```
 enter:0
 enter:5
@@ -76,7 +76,8 @@ enter:0
  [  0.   0.   0.]
  [-10.   0.   0.]]
  ```
- 
+ ![Alt text](https://raw.githubusercontent.com/ShihPingLai/Group-9/master/E%20field/E%20input%20for%202D%20.png)
+
  
 
 
