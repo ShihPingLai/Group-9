@@ -98,84 +98,86 @@ for w in range(no_of_charges):
 
 以 plt.quiver 畫出向量圖，箭號大小表示電場大小，箭號方向表示電場方向
 
-1. 畫出二維輸入介面的電場分佈
+#### 1. 畫出二維輸入介面的電場分佈
 
 - 2D電場分佈
 
-使用程式 [E Field with user 2D input (2D)](https://github.com/ShihPingLai/Group-9/blob/master/E%20field/E%20Field%20with%20user%20%202D%20input%20(2D).py) 
+  使用程式 [E Field with user 2D input (2D)](https://github.com/ShihPingLai/Group-9/blob/master/E%20field/E%20Field%20with%20user%20%202D%20input%20(2D).py) 
 
-假設以下依序為輸入陣列，可得到結果如下圖： 
-```
-enter:0         
-enter:5         #位置為(0,1)，所帶電荷為+5
-enter:0
-enter:0
-enter:0
-enter:0
-enter:-10       #位置為(2,0)，所帶電荷為-10
-enter:0
-enter:0
-[[  0.   5.   0.]
- [  0.   0.   0.]
- [-10.   0.   0.]]
- ```
- ![Alt text](https://raw.githubusercontent.com/ShihPingLai/Group-9/master/E%20field/figure/E%20with%202D%20input%20(2D)%20.png)
+  假設以下依序為輸入陣列，可得到結果如下圖： 
+  ```
+  enter:0         
+  enter:5         #位置為(0,1)，所帶電荷為+5
+  enter:0
+  enter:0
+  enter:0
+  enter:0
+  enter:-10       #位置為(2,0)，所帶電荷為-10
+  enter:0
+  enter:0
+  [[  0.   5.   0.]
+  [  0.   0.   0.]
+  [-10.   0.   0.]]
+
+  ```
+  ![Alt text](https://raw.githubusercontent.com/ShihPingLai/Group-9/master/E%20field/figure/E%20with%202D%20input%20(2D)%20.png)
 
  
 - 3D電場分佈
 
-使用程式[E Field with user 2D input (3D)](https://github.com/ShihPingLai/Group-9/blob/master/E%20field/E%20Field%20with%20user%202D%20input%20(3D).py) 
+  使用程式[E Field with user 2D input (3D)](https://github.com/ShihPingLai/Group-9/blob/master/E%20field/E%20Field%20with%20user%202D%20input%20(3D).py) 
 
-假設以下依序為輸入陣列，可得到結果如下圖： 
-```
-enter:5            #位置為(0,0)，所帶電荷為+5
-enter:0
-enter:0
-enter:0
-enter:0
-enter:0
-enter:0
-enter:0
-enter:-10          #位置為(2,2)，所帶電荷為-10
-[[  5.   0.   0.]
- [  0.   0.   0.]
- [  0.   0. -10.]]
-```
- ![Alt text](https://raw.githubusercontent.com/ShihPingLai/Group-9/master/E%20field/figure/E%20with%202D%20input%20(3D)%20.png)
+  假設以下依序為輸入陣列，可得到結果如下圖： 
+  ```
+  enter:5            #位置為(0,0)，所帶電荷為+5
+  enter:0
+  enter:0
+  enter:0
+  enter:0
+  enter:0
+  enter:0
+  enter:0
+  enter:-10          #位置為(2,2)，所帶電荷為-10
+  [[  5.   0.   0.]
+  [  0.   0.   0.]
+  [  0.   0. -10.]]
+  ```
+  ![Alt text](https://raw.githubusercontent.com/ShihPingLai/Group-9/master/E%20field/figure/E%20with%202D%20input%20(3D)%20.png)
  
  
-2. 畫出三維輸入介面的電場分佈
+#### 2. 畫出三維輸入介面的電場分佈
 
    使用程式[E Field with user 3D input (3D)](https://github.com/ShihPingLai/Group-9/blob/master/E%20field/E%20field%20with%20user%203D%20input.py) 
 
 - 先輸入想要放置的電荷數（以下放入3電荷為例）：
-```
-Enter the number of charges you want:0
-There must be at least one charge to generate an electric field!
-```
-若當輸入的電荷<=0時，將要求使用者重新輸入，直到電荷數不為零。
+  ```
+  Enter the number of charges you want:0
+  There must be at least one charge to generate an electric field!
+  ```
+  若當輸入的電荷<=0時，將要求使用者重新輸入，直到電荷數不為零。
 
-```Enter the number of charges you want:3  ```
+  ```Enter the number of charges you want:3  ```
 
-- 分別輸入電荷資訊，可以得到以下結果：
+- 分別輸入電荷資訊
 
-  在 (0,0,0) 和 (2,2,0) 放入帶電量為 +5 的電荷
-
-  在 (1,1,2) 放入帶電量為 -10 的電荷
-```enter x coordinate, 0<=x<3, x=integer:0
-enter y coordinate, 0<=y<3, y=integer:0
-enter z coordinate, 0<=z<3, z=integer:0
-enter the magnitude of the charge:5
-A charge of magnitude 5 is placed at coordinate 0 0 0
-enter x coordinate, 0<=x<3, x=integer:2
-enter y coordinate, 0<=y<3, y=integer:2
-enter z coordinate, 0<=z<3, z=integer:0
-enter the magnitude of the charge:5
-A charge of magnitude 5 is placed at coordinate 2 2 0
-enter x coordinate, 0<=x<3, x=integer:1
-enter y coordinate, 0<=y<3, y=integer:1
-enter z coordinate, 0<=z<3, z=integer:2
-enter the magnitude of the charge:-10
-A charge of magnitude -10 is placed at coordinate 1 1 2
-```
- ![Alt text](https://raw.githubusercontent.com/ShihPingLai/Group-9/master/E%20field/figure/E%20with%203D%20input%20(3D)%20.png)
+  在 (0,0,0) 和 (2,2,0) 放入帶電量為 +5 的電荷，在 (1,1,2) 放入帶電量為 -10 的電荷。
+  
+  可得到以下結果：
+  
+  ```enter x coordinate, 0<=x<3, x=integer:0
+  enter y coordinate, 0<=y<3, y=integer:0
+  enter z coordinate, 0<=z<3, z=integer:0
+  enter the magnitude of the charge:5
+  A charge of magnitude 5 is placed at coordinate 0 0 0
+  enter x coordinate, 0<=x<3, x=integer:2
+  enter y coordinate, 0<=y<3, y=integer:2
+  enter z coordinate, 0<=z<3, z=integer:0
+  enter the magnitude of the charge:5
+  A charge of magnitude 5 is placed at coordinate 2 2 0
+  enter x coordinate, 0<=x<3, x=integer:1
+  enter y coordinate, 0<=y<3, y=integer:1
+  enter z coordinate, 0<=z<3, z=integer:2
+  enter the magnitude of the charge:-10
+  A charge of magnitude -10 is placed at coordinate 1 1 2
+  ```
+![Alt text](https://raw.githubusercontent.com/ShihPingLai/Group-9/master/E%20field/figure/E%20with%203D%20input%20(3D)%20.png)
