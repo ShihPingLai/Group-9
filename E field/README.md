@@ -24,7 +24,13 @@
        position[i][j]= input("enter:")
    print position
    ```
-
+   將不同位置電荷的的電場疊加：
+   ```
+        Ex, Ey =E(x, y, i, j, position[i][j])
+        ex = Ex + ex
+        ey = Ey + ey
+   ```
+   
    在平面上顯示電荷位置（若電荷＝0 不顯示）
 
    ```for i in range(0,n):
