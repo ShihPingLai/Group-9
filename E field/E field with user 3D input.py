@@ -1,18 +1,15 @@
-# -*- coding: utf-8 -*-
-## E field of a positive charge in 3D
-
 from mpl_toolkits.mplot3d import axes3d
 import matplotlib.pyplot as plt
 import numpy as np
-x = np.linspace(0,2,6)   #以6個向量標示
-y = np.linspace(0,2,6)
-z = np.linspace(0,2,6)
+x = np.linspace(-1,3,6)   #以6個向量標示
+y = np.linspace(-1,3,6)
+z = np.linspace(-1,3,6)
 x,y,z = np.meshgrid(x,y,z)
 
 # 3d figure
 fig = plt.figure()
 ax = fig.gca(projection='3d')  #畫出3維的座標軸
-ax.view_init(elev=30, azim = 0)
+# ax.view_init(elev=30, azim = 0)
 
 def E(x,y,z,m,n,l,q):     
     e=8.85*10**-12           
@@ -29,7 +26,7 @@ ey = 0
 ez = 0
 
 n = 3 
-position = np.zeros([n, n, n]) # ([row, col])
+position = np.zeros([n, n, n])    #([x, y, z])
 
 no_of_charges = input("Enter the number of charges you want:")
 while no_of_charges <=0:
@@ -63,10 +60,10 @@ for i in range(0,n):
      
 
 ax.quiver(x,y,z,ex,ey,ez,color='b',length=1,normalize=True) 
-plt.title('E field of a positive charge')
+plt.title('E field of charges with user 3D input (3D)')
 plt.xlabel('x')
 plt.ylabel('y')
-plt.ylabel('z')
+#plt.zlabel('z')
 plt.plot
 plt.show()
 
