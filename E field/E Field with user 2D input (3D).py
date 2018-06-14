@@ -46,7 +46,7 @@ for i in range(0,n):
         ez=Ez+ez        
 
 ax.quiver(x,y,z,ex,ey,ez,color='b',length=1,normalize=True) 
-plt.title('E field of positive charges with user 2D input (3D)')
+plt.title('E field of charges with user 2D input (3D)')
 plt.xlabel('x')
 plt.ylabel('y')
 plt.plot
