@@ -1,9 +1,4 @@
 
-# coding: utf-8
-
-# In[3]:
-
-
 import matplotlib.pyplot as plt
 import numpy as np
 x = np.linspace(-3,4,20)
