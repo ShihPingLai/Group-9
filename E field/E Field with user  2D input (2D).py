@@ -43,7 +43,7 @@ for i in range(0,n):
     
 plt.quiver(x,y,ex,ey,width=0.03,units='xy',color='b', scale = 30000000000)
         
-plt.title('E field of positive charges with user 2D input (2D)')
+plt.title('E field of charges with user 2D input (2D)')
 plt.xlabel('x')
 plt.ylabel('y')
 #ax.view_init(elev=-90, azim=90)
